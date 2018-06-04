@@ -1,0 +1,23 @@
+/* AFTER 01 */
+body {
+	font-size: 112.5%;
+	line-height: 1.35;
+}
+p {
+  color: #ff7b00;
+}
+code {
+  font-weight: 600;
+}
+
+.example {
+	color: #00c3ff;
+}
+
+.example.example-2 {
+	color: #27c400; /* negated by next rule */
+}
+
+.example.example-2 {
+	color: #9d00c4;
+}
