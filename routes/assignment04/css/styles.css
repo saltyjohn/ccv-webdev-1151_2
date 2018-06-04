@@ -9,15 +9,21 @@ p {
 code {
   font-weight: 600;
 }
-
 .example {
 	color: #00c3ff;
 }
-
 .example.example-2 {
 	color: #27c400; /* negated by next rule */
 }
-
 .example.example-2 {
 	color: #9d00c4;
+}
+
+/* AFTER 02 & 03 */
+.after-p {
+	color: #444444;
+}
+main > img {
+	width: 100%;
+	height: auto;
 }

@@ -54,7 +54,6 @@ main {
   font-family: 'Song Myung', serif;
   color: #2c2c2c;
 }
-/* REMEMBER to use id's for elements when sharing CSS files */
 main > h1 {
   text-align: center;
   margin: 20px 0;

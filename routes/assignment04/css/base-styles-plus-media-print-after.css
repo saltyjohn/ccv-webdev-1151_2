@@ -1,0 +1,40 @@
+/* This file name is waaayyy too long... */
+
+/* Styles for all media */
+img {
+  margin: 0 5px;
+}
+
+p {
+	color: orange;
+	font-style: italic;
+}
+
+#palau-images {
+  display: flex;
+  justify-content: center;
+}
+
+/* Print Style Sheet */
+@media print {
+
+	body {
+		/*
+		make text larger.
+		*/
+		font-size: 18pt;
+	}
+
+	p {
+		color: #222222; /* hex for dark grey */
+  }
+
+  header {
+    display: none; /* hide header */
+  }
+
+	img {
+    filter: grayscale(100%); /* Black and white images */
+	}
+
+}

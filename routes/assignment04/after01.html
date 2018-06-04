@@ -3,13 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Specificity</title>
-  <!-- The following line loads the style sheet that contains the styles shown in Figure A. Note that in Figure B the book, the following line appears as:
-
-		<link rel="stylesheet" href="style.css" />
-
-	For this example on the book site, I renamed the style sheet to specificity.css and placed it in a subfolder named css; hence the href path of css/specificity.css.
-  -->
+  <title>Specificity After</title>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="css/styles.css" />
@@ -34,7 +28,8 @@
     </nav>
   </header>
 
-  <main>
+  <main role="main">
+    <h1>CSS Specificity</h1>
 
     <p>Here's a generic
       <code>p</code> element. It will be orange-red.</p>
@@ -50,7 +45,7 @@
       <code>example</code> and
       <code>example-2</code>. There are four rules that could apply to this paragraph. The first two are overruled by the more specific last two.
       However, because the last two have the same selector, the order breaks the tie between them: the one that appears later
-      wins, and thus this paragraph will be green instead of magenta.</p>
+      wins, and thus this paragraph will be purple-ish instead of green.</p>
   </main>
 </body>
 
