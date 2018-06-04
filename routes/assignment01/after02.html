@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CONTENT</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <style>
+    img {
+      height: 200px;
+      width: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="gifs"></div>
+  <script>
+    const imageSrcArr = [
+      "https://media2.giphy.com/media/3ohhwGQ2yWEf9qh2SI/200w.webp",
+      "https://media3.giphy.com/media/3ohhwHnow9mtjKTZsY/200w.webp",
+      "https://media2.giphy.com/media/l1J9OwcKrgbaXdfNu/200w.webp",
+      "https://media3.giphy.com/media/l1J9GIXk9w7OYsd5S/200w.webp",
+      "https://media1.giphy.com/media/l1J9He1aykdggycQ8/200w.webp",
+      "https://media0.giphy.com/media/l1J9xBG7nVL1VTK9y/200w.webp",
+      "https://media2.giphy.com/media/l1J9QAeH6JFFTK2dO/200w.webp",
+      "https://media0.giphy.com/media/l1J9QSl5V0Poqilk4/200w.webp",
+      "https://media3.giphy.com/media/3ohhwGlQA13vhl9iPS/200w.webp",
+      "https://media1.giphy.com/media/l1J9qqHQQcaCJPZW8/200w.webp",
+      "https://media3.giphy.com/media/l1J9qfza2fpok7Fzq/200w.webp",
+      "https://media2.giphy.com/media/3ohhwhEomIJ31IhHsQ/200w.webp",
+      "https://media0.giphy.com/media/l1J9OveaCA8yo1Xws/200w.webp",
+      "https://media2.giphy.com/media/l1J9QAeH6JFFTK2dO/200w.webp",
+      "https://media3.giphy.com/media/3ohhwecZF18daFmy2s/200w.webp",
+      "https://media0.giphy.com/media/3ohhweFhosDuLk2Api/200w.webp"
+    ]
+    const div = document.getElementById('gifs')
+    imageSrcArr.forEach(src => {
+      const image = document.createElement('img')
+      image.src = src
+      div.appendChild(image)
+    });
+  </script>
+</body>
+
+</html>

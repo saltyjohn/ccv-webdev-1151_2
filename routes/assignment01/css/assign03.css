@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  border-left: 5px solid #000000;
+  font-family: 'Gill Sans', serif;
+}
+h1 {
+  width: 60%;
+  font-size: 2.4rem;
+}
+article {
+  margin: 0px 25px;
+}
+article>p {
+  padding: 0px 25px;
+  font-size: 1.7rem;
+}
+img {
+  float: right;
+  border-radius: 3rem .9rem;
+}
+
+#gradient {
+  width: 60px;
+  height: auto;
+  background: linear-gradient(to right,  rgba(0, 162, 255, 0.822), rgba(255,0,0,0));
+}
+
+.fancy-letters {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  margin-right: 3px;
+}

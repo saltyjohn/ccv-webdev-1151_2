@@ -1,0 +1,65 @@
+h1 {
+  color: #414141;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 2.2rem;
+  -webkit-text-fill-color: #666666;
+  -webkit-text-stroke-width: 0px;
+}
+
+
+.blue-pulse {
+  -webkit-animation: blue-pulse 1.8S infinite;
+  -moz-animation:    blue-pulse 1.8S infinite;
+  -o-animation:      blue-pulse 1.8S infinite;
+  animation:         blue-pulse 1.8S infinite;
+}
+
+.green-pulse {
+  -webkit-animation: green-pulse 1.7s infinite;
+  -moz-animation:    green-pulse 1.7s infinite;
+  -o-animation:      green-pulse 1.7s infinite;
+  animation:         green-pulse 1.7s infinite;
+}
+
+@keyframes blue-pulse {
+  0%   {
+    font-size: 2.2rem;
+    -webkit-text-fill-color: #666666;
+    -webkit-text-stroke-color: #44e3ff5d;
+    -webkit-text-stroke-width: 1px;
+  }
+  60% {
+    font-size: 2.5rem;
+    -webkit-text-fill-color: #414141;
+    -webkit-text-stroke-color: #44e3ffe1;
+    -webkit-text-stroke-width: 2px;
+  }
+  100%  {
+    font-size: 2.2rem;
+    -webkit-text-fill-color: #666666;
+    -webkit-text-stroke-color: #44e3ff5d;
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
+@keyframes green-pulse {
+  0%   {
+    font-size: 2.2rem;
+    -webkit-text-fill-color: #666666;
+    -webkit-text-stroke-color: #17f0a850;
+    -webkit-text-stroke-width: 1px;
+  }
+  40% {
+    font-size: 2.5rem;
+    -webkit-text-fill-color: #414141;
+    -webkit-text-stroke-color: #17f0a8fa;
+    -webkit-text-stroke-width: 2px;
+  }
+  100%  {
+    font-size: 2.2rem;
+    -webkit-text-fill-color: #666666;
+    -webkit-text-stroke-color: #17f0a850;
+    -webkit-text-stroke-width: 1px;
+  }
+}

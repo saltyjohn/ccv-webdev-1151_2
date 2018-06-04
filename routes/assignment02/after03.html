@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Updated title to better represent alterations to page: news landing site,
+        52 characters for best SEO -->
+  <title>JRSweb: Latest Before and Afters, Research and More!</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="common/css/assign02_01.css">
+  <link rel="stylesheet" href="common/css/assign02_03.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700i|Poppins:500i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|EB+Garamond|Lobster|IBM+Plex+Mono" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ==== SITE NAVIGATION ==== -->
+  <header>
+    <a id="header-main-anchor" href="/" alt="home">
+      <img src="/images/icon_main_web.svg"> JRSweb
+    </a>
+    <nav id="main-nav">
+      <button>
+        <a class="header-anchor" href="/routes/assignments.html">
+          Assignments
+        </a>
+      </button>
+      <button>
+        <a class="header-anchor" href="">
+          About
+        </a>
+      </button>
+    </nav>
+  </header>
+
+  <!-- General Div for Full Page Margins -->
+  <div class="page-content">
+
+    <main role="main">
+      <!-- ==== START PARENT ARTICLE ==== -->
+      <article>
+        <div class="article-title-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Responsive_Web_Design_Demo_Template.svg" alt="graphics art of multiple devices with varying sizes, wikipedia commons">
+          <h1>Responsive Web Design</h1>
+        </div>
+        <p class="article-content">
+          &emsp;The
+          <!-- Added abbreviations and defintions -->
+          <abbr title="Responsive Web Design">RWD</abbr> philosophy can be integrated within both Progressive Web Enhancement and Graceful Degradation.
+          <dfn>RWD</dfn> is simply dynamic rendering based on device size. Websites and applications that incorporate RWD principles
+          have prepared for the end-user to be using anything from a desktop, to tablet, or smartphone. The most common implementation
+          of RWD is through CSS media queries.
+          <dfn>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank">@media</a>
+          </dfn> is a rule within CSS that changes or applies a look or layout when specified parameters are met such as
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/width" target="_blank">width</a>,
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/height" target="_blank">height</a>,
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation" target="_blank">orientation</a>,
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting" target="_blank">scripting</a>, etc.
+          <br>
+          <br>&emsp;In 2015, for the first time in history, users with mobile devices (smartphones and tablets) out-searched
+          the web compared to users with desktops and laptops. Google embraced this turn with an update to it's search algorithm,
+          coined
+          <!-- short quote for Mobilegeddon -->
+          <q>
+            <a href="https://en.wikipedia.org/wiki/Mobilegeddon" target="_blank">Mobilegeddon</a>
+          </q>, that slightly favored websites which could return appealing layouts to mobile users. Searches from laptops and
+          desktops were not affected. The resulting affect to traffic on non-responsive sites was fairly insubstantial, but
+          could spell a trend in other markets as mobile performance increases and the desktop environment user-base shrinks.
+        </p>
+
+        <!-- article's footer, not the page's -->
+        <footer class="deep-margin">
+          <p>John Salzman is a freelance web developer who is working toward his degree in computer systems management from
+            the Community College of Vermont.</p>
+
+          <address>
+            You may reach him at
+            <a href="mailto:thisisreallymyemail@iamtotallydoingwork.com">thisisreallymyemail@iamtotallydoingwork.com</a>.
+          </address>
+        </footer>
+        <br>
+        <hr>
+
+        <!-- :::: Start Reader Comments Section :::: -->
+        <!-- each article nested in the parent article represents a reader comment -->
+        <section id="comment-section">
+          <div class="h2-border-01">
+            <div class="h2-border-00">
+              <h2>Reader Comments</h2>
+            </div>
+          </div>
+
+          <article class="comment-container">
+            <footer>travelgal wrote on
+              <time datetime="2014-02-26">February 26, 2014</time>:
+            </footer>
+
+            <p class="deep-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt qui iste amet minus inventore officiis
+              porro laboriosam corrupti reprehenderit! Ipsam, odit officia rerum ab eligendi laborum illum accusantium nulla!Est
+              ratione blanditiis omnis possimus rem hic iste unde non eveniet vitae suscipit, adipisci saepe ea dolorem dolores
+              neque eaque doloremque quisquam necessitatibus! Quidem, nihil asperiores. Sequi hic esse modi?
+            </p>
+          </article>
+
+          <article class="comment-container">
+            <footer>juan wrote on
+              <time datetime="2014-02-28">February 28, 2014</time>:
+            </footer>
+
+            <p class="deep-margin">Dolore ab velit vel recusandae nulla debitis blanditiis expedita reprehenderit neque at accusantium ratione ipsa
+              distinctio ea libero tempore, magnam dolorem minima temporibus necessitatibus sit est voluptatibus nobis. Temporibus,
+              iste? Blanditiis quaerat ut qui beatae illo ullam? Itaque exercitationem placeat cupiditate dolorum impedit
+              ut commodi vel quod voluptates rem, illo amet! Facere commodi accusamus fugiat in nemo assumenda rerum ipsam.</p>
+          </article>
+
+          <article id="comments-button">
+            <button class="button-go" onclick="loadMoreComments()">Load More Comments</button>
+          </article>
+        </section>
+        <!-- end reader comments section -->
+      </article>
+      <!-- end parent article -->
+    </main>
+
+    <hr>
+
+    <!-- COMPLIMENTARY ASIDE -->
+    <aside role="complementary">
+      <h2 style="color: #fff; background-color: #0ebfc5">Other Articles By John Salzman</h2>
+      <!-- Had to get a little lazy with the links.... time management -->
+      <nav>
+        <ul class="deep-margin" style="margin-top: 2rem">
+          <li>
+            <a href="https://sites.google.com/site/jrswebdeb1151/assignments/assignment02">Progressive Web Enhancement</a>
+          </li>
+          <li>
+            <a href="https://sites.google.com/site/jrswebdeb1151/assignments/assignment02">Graceful Degradation</a>
+          </li>
+        </ul>
+        <!-- end link list -->
+      </nav>
+      <!-- end aside -->
+    </aside>
+    <!-- end page-content -->
+  </div>
+
+  <script src="common/js/moreCommentsSlow.js"></script>
+</body>
+
+</html>

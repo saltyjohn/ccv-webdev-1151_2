@@ -1,0 +1,221 @@
+/* Global */
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #f5f5f5;
+  align-items: center;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  flex-direction: row;
+  font-family: 'EB Garamond', serif;
+  align-items: center;
+  background-color: #0ed1d8;
+  padding: 2rem 4rem;
+}
+#header-main-anchor {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+header > a > img {
+  height: 100px;
+  width: auto;
+  background-color: #fff;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 4.4rem;
+}
+#main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#main-nav > button {
+  width: 30%;
+  background-color: #f5f5f5;
+  border-style: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+#main-nav > button > a {
+  font-size: 2rem;
+  color: #414141;
+  text-decoration: inherit;
+}
+
+
+/*
+TODO: Add Styling for NAV
+*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  max-width: 960px;
+}
+
+/* Assignments Table, psuedo-table */
+#psuedo-table-headers {
+  display: flex;
+  width: 90%;
+  text-decoration: underline;
+  font-size: 2rem;
+  font-family: 'Lobster', serif;
+  justify-content: space-between;
+}
+#psuedo-table-headers>h2:nth-child(2) {
+  align-content: flex-end;
+}
+
+#assignments-list {
+  padding: 20px;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  margin: 35px 0;
+  border-left: 18px solid #ff1e00a6;
+  border-bottom: 8px solid #ff1e00a6;
+  border-bottom-left-radius: 2rem;
+}
+.item-active {
+  border-color: #17f0a8fa;
+}
+
+.link-bullet {
+  font-size: 3rem;
+  font-family: 'Kaushan Script', serif;
+  font-weight: 700;
+  height: 4rem;
+  padding: 0px 15px;
+  border-top-right-radius: .3rem;
+  background-color: #13b5f5
+}
+.assignment-number {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding: .65rem;
+  margin-right: 8rem;
+  border-right: 3px solid #13b5f5;
+  border-bottom: .1rem solid #13b5f5;
+  border-bottom-right-radius: .3rem;
+}
+.assignment-container {
+  width: 100%;
+}
+.ba-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.link-style {
+  color: #414141;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  text-decoration: underline;
+  padding: 0.8rem 0;
+  -webkit-text-fill-color: #666666;
+  -webkit-text-stroke-width: 1px;
+}
+/* B&A TITLE */
+.ba-container > p {
+  width: 150px;
+  font-size: 1.3rem;
+  text-align: end;
+  font-weight: 700;
+  margin-right: 1.4rem;
+}
+
+.b-link {
+  text-decoration-color: #44e3ff;
+  -webkit-text-stroke-color: #44e3ff5d;
+}
+.b-link:hover {
+  -webkit-animation: blue-pulse 1.7s infinite;
+  -moz-animation:    blue-pulse 1.7s infinite;
+  -o-animation:      blue-pulse 1.7s infinite;
+  animation:         blue-pulse 1.7s infinite;
+}
+.a-link {
+  text-decoration-color: #17f0a8;
+  -webkit-text-stroke-color: #17f0a850;
+}
+.a-link:hover {
+  -webkit-animation: green-pulse 1.7s infinite;
+  -moz-animation:    green-pulse 1.7s infinite;
+  -o-animation:      green-pulse 1.7s infinite;
+  animation:         green-pulse 1.7s infinite;
+}
+
+.not-completed-text {
+  border-top: 1px solid #ff4800;
+  border-left: 1px solid #ff4800;
+  border-bottom: 1px solid #ff4800;
+  width: 70%;
+  color: #ff4800;
+  text-align: center;
+  align-content: right;
+}
+
+/* KEYFRAMES & MEDIA QUERIES */
+@keyframes green-pulse {
+  0%   {
+    font-size: 3rem;
+    -webkit-text-fill-color: #666666;
+    -webkit-text-stroke-color: #17f0a850;
+    -webkit-text-stroke-width: 1px;
+  }
+  30% {
+    font-size: 4rem;
+    -webkit-text-fill-color: #414141;
+    -webkit-text-stroke-color: #17f0a8fa;
+    -webkit-text-stroke-width: 2px;
+  }
+  100%  {
+    font-size: 3rem;
+    -webkit-text-fill-color: #666666;
+    -webkit-text-stroke-color: #17f0a850;
+    -webkit-text-stroke-width: 1px;
+  }
+}
+@keyframes blue-pulse {
+  0%   {
+    font-size: 3rem;
+    -webkit-text-fill-color: #666666;
+    -webkit-text-stroke-color: #44e3ff5d;
+    -webkit-text-stroke-width: 1px;
+  }
+  60% {
+    font-size: 4rem;
+    -webkit-text-fill-color: #414141;
+    -webkit-text-stroke-color: #44e3ffe1;
+    -webkit-text-stroke-width: 2px;
+  }
+  100%  {
+    font-size: 3rem;
+    -webkit-text-fill-color: #666666;
+    -webkit-text-stroke-color: #44e3ff5d;
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
+/*
+TODO: fix, create
+1. Everything
+2. Nav Hamburger menu?
+*/
+@media screen and (max-width: 1000px) {
+
+}
