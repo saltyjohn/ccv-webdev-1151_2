@@ -76,3 +76,5 @@ function createNewNode(targetNode, el, text, className, pend) {
   else if (pend === 'append') targetNode.append(newNode);
   else console.log(`Error: Could not add class '${className}' to target. Node setting '${pend}' not understood.`);
 }
+
+// TODO: Would like to add a hideCompleted Function that would minimize completed assignments

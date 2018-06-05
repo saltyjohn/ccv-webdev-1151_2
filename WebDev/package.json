@@ -11,7 +11,5 @@
   "author": "John Salzman",
   "license": "ISC",
   "homepage": "http://jrs12220.classweb.ccv.edu/WebDev/",
-  "dependencies": {
-    "eslint": "^4.19.1"
-  }
+  "dependencies": {}
 }
