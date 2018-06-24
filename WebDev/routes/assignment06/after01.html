@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Border Styles</title>
+  <style>
+    /* Demonstration of the various border styles available to you.
+CSS is embedded instead of in an external style sheet just to keep the demo simple. */
+
+    body {
+      font-family: sans-serif;
+      padding: 0 10px 0;
+    }
+
+    p {
+      border: 10px solid red;
+      padding: 15px;
+    }
+
+    p.ddd {
+      border-width: 4px;
+      border-style: dotted dashed double;
+    }
+
+    p.ridge {
+      border-style: ridge;
+      border-color: orange;
+    }
+
+    p.groove {
+      border-style: groove;
+      border-color: purple;
+    }
+
+    p.inset {
+      border-style: inset;
+      border-color: blue;
+    }
+
+    p.outset {
+      border-style: outset;
+      border-color: green;
+    }
+
+    .curved-bottom {
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+
+    .curved-top {
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="ddd curved-bottom">A 5px border from top, right, bottom, left:
+    <br />dotted, dashed, double, solid.</p>
+  <p class="ridge curved-top">Here's a paragraph with a 10px ridge border.</p>
+  <p class="groove curved-bottom">Here's one with a 10px groove border.</p>
+  <p class="inset curved-top">And here's one with a 10px inset border.</p>
+  <p class="outset curved-bottom">And here's one with a 10px outset border.</p>
+</body>
+
+</html>

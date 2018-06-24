@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Overflow</title>
+  <style>
+    body {
+      font: 100% tahoma;
+      color: #2b2b2b;
+      padding: 0px 5px;
+    }
+
+    h2 {
+      font-size: 1.125em;
+      /* 18px/16px */
+      font-family: sans-serif;
+      margin-bottom: 3px;
+    }
+
+    code {
+      font-size: 1.2295em;
+    }
+
+    .first {
+      margin-bottom: 45px;
+    }
+
+    div+h2 {
+      padding-top: 5px;
+      margin-top: 25px;
+    }
+
+    p {
+      margin: 0 0 .75em;
+      font-size: 13px;
+    }
+
+    div div {
+      background: #e0f7ac;
+      height: 88px;
+      width: 300px;
+      border: 1px solid #666;
+    }
+
+    .oflow {
+      display: none;
+    }
+
+    #switch-panel {
+      display: flex;
+      background: #666;
+      height: 200px;
+      width: 350px;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    button {
+      height: 100px;
+      width: 75px;
+    }
+
+    button:hover {
+      height: 115px;
+      background: cyan;
+    }
+
+    .example-hidden {
+      overflow: hidden;
+    }
+
+    .example-scroll {
+      overflow: scroll;
+    }
+
+    .example-auto {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="switch-panel">
+    <button id="default" onclick="showFlow(this)" active>Default</button>
+    <button id="hidden" onclick="showFlow(this)">Hidden</button>
+    <button id="scroll" onclick="showFlow(this)">Scroll</button>
+    <button id="auto" onclick="showFlow(this)">Auto</button>
+  </div>
+
+
+  <div id="overflow-default" class="flow-container">
+    <h2>Default (
+      <code>overflow: visible;</code>)</h2>
+    <div class="first">
+      <p>My name is Eleina Shinn. Exploring the unknown and learning about our planet is what brings me the most pleasure.</p>
+
+      <p>During the last five years I traveled to over 20 countries on 4 continents, often with just my backpack and a map in
+        hand.
+      </p>
+    </div>
+  </div>
+  <div id="overflow-hidden" class="flow-container oflow">
+    <h2>
+      <code>overflow: hidden;</code>
+    </h2>
+    <div class="example-hidden">
+      <p>My name is Eleina Shinn. Exploring the unknown and learning about our planet is what brings me the most pleasure.</p>
+
+      <p>During the last five years I traveled to over 20 countries on 4 continents, often with just my backpack and a map in
+        hand.
+      </p>
+    </div>
+  </div>
+  <div id="overflow-scroll" class="flow-container oflow">
+    <h2>
+      <code>overflow: scroll;</code>
+    </h2>
+    <div class="example-scroll">
+      <p>My name is Eleina Shinn. Exploring the unknown and learning about our planet is what brings me the most pleasure.</p>
+
+      <p>During the last five years I traveled to over 20 countries on 4 continents, often with just my backpack and a map in
+        hand.
+      </p>
+    </div>
+  </div>
+  <div id="overflow-auto" class="flow-container oflow">
+    <h2>
+      <code>overflow: auto;</code>
+    </h2>
+    <div class="example-auto">
+      <p>My name is Eleina Shinn. Exploring the unknown and learning about our planet is what brings me the most pleasure.</p>
+
+      <p>During the last five years I traveled to over 20 countries on 4 continents, often with just my backpack and a map in
+        hand.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showFlow(e) {
+      const flows = document.getElementsByClassName("flow-container");
+      let showFlow;
+      // Find element without oflow class and set to showFlow
+      for (let i in flows) {
+        if (i < 4) {
+          const classList = flows[i].className.split(' ');
+          if (classList.indexOf('oflow') === -1) {
+            showFlow = flows[i]
+          }
+        }
+      }
+      const target_oflow = document.getElementById('overflow-' + e.id);
+      // add oflow class to currently shown element, and remove it from target
+      showFlow.classList.add('oflow')
+      target_oflow.classList.remove('oflow')
+    }
+  </script>
+</body>
+
+</html>
