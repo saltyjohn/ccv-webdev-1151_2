@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Transforms After</title>
+  <style>
+    div {
+      width: 300px;
+      height: 100px;
+      background-color: yellow;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Flipping an Element with onmouseover()</h1>
+  <!-- Had to look at the source code from page to see how they did it, transform property is only available when directly implimented in element -->
+  <div onmouseover="rotateDiv(this)" id="myDiv" style="transform: rotateX(360deg);">
+    This div element flips 180 degrees on The X Axis.
+  </div>
+
+  <script>
+    function rotateDiv(e) {
+      let degree = Number(e.style.transform.split('(')[1].split('d')[0])
+      let flip = 180;
+      e.style.transform = `rotateX(${degree - 180}deg)`;
+    }
+  </script>
+
+</body>
+
+</html>
