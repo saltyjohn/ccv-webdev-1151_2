@@ -12,8 +12,8 @@ nav {
 
 /*
  Prevents sub and sup affecting line-height in all browsers:
- 	gist.github.com/413930 
- 
+ 	gist.github.com/413930
+
  (Note: I modified the version from that URL.)
 */
 sup {
@@ -26,7 +26,7 @@ sup {
 sup {
     top: -.75em;
 }
- 
+
 h1 sup {
     font-size: 35%;
 	left: -1%;
@@ -52,8 +52,8 @@ h1 sup {
  	overflow: auto;
 	padding: 10px 10px 10px 16px;
 
-	/* 
-		Tools like css3please.com, which I used for the code that follows, 
+	/*
+		Tools like css3please.com, which I used for the code that follows,
 		help you generate CSS3 code. Try it out yourself!
 	*/
   	-webkit-border-radius: 6px 6px 0 0; /* Android â‰¤ 1.6, iOS 1-3.2, Safari 3-4 */
@@ -68,8 +68,9 @@ h1 sup {
 }
 
 .nav li {
-	float: left; 				
+	float: left;
 	width: 10em;
+	padding: 5px;
 }
 
 .nav li a:hover,
@@ -85,12 +86,13 @@ h1 sup {
 	left: -999em; /* hide a submenu offscreen by default so visitors don't see it */
 	position: absolute;
 	z-index: 1000;
-	
-	/* 
+	background-color: #303030;
+
+	/*
 		See note above about css3please.com.
 	*/
-  -webkit-border-radius: 0 0 8px 8px; /* Android â‰¤ 1.6, iOS 1-3.2, Safari 3-4 */
-          border-radius: 0 0 8px 8px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  -webkit-border-radius: 8px; /* Android â‰¤ 1.6, iOS 1-3.2, Safari 3-4 */
+          border-radius: 8px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
 }
 
 .nav li:hover .submenu {
@@ -116,7 +118,7 @@ main {
 	margin-top: 7px;
 	padding: 1em;
 
-	/* 
+	/*
 		See note above about css3please.com.
 	*/
   -webkit-border-radius: 0 0 8px 8px; /* Android â‰¤ 1.6, iOS 1-3.2, Safari 3-4 */
